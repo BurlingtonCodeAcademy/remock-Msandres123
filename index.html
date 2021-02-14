@@ -1,14 +1,243 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Mockup Home</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  </head>
-  <body>
-    <section id="header"></section>
-    <section id="features"></section>
-    <section id="main"></section>
-    <section id="footer"></section>
-  </body>
+<link href="indexcss.css" rel="stylesheet" />
+
+<head>
+  <title>Mockup Home</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--Found this on YouTube, seems to work fine-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#submit-button').click(function () {
+        $('.clear').val('');
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio autoplay loop>
+    <source src="CFN pics/coldsummer.mp3" type="audio/mpeg">
+  </audio>
+  <section id="header">
+    <a href="index.html">
+      <h1>Cady's Falls Trail Network</h1>
+    </a>
+    <p>Mo-Vegas' Finest</p>
+    <div id="biker-container">
+      <img id="biker" src="CFN pics/bike.png">
+    </div>
+    <!--used hr to create a horizontal line, may be a better way, but not sure-->
+    <hr id="border-top">
+    <hr id="border-top">
+  </section>
+  <section id="features">
+    <h4>Home Of The Best MTB In Lamoille County</h4>
+    <!--Created a flex box to spread out the images-->
+    <div id="image-container">
+      <img class="pic" src="CFN pics/KFTpic.jpg" />
+      <img class="pic" src="CFN pics/trail pic.jpg" />
+      <img class="pic" src="CFN pics/Scout X01.jpg" />
+      <!--Made a separate class for the images so I could adjust their size without messing up flex box above-->
+    </div>
+    <!--created a new flex box to spread out the captions under the images, should look into a better way, but this works for now-->
+    <div id="captions">
+      <!--Inline style to add padding to the captions made it easier to center them under the images-->
+      <p style="padding-left: 50px;"><strong>Image One</strong></p>
+      <p style="padding-left: 25px;"><strong>Image Two</strong></p>
+      <p style="padding-right: 60px;"><strong>Image Three</strong></p>
+    </div>
+    <div id="learn-more-wrap">
+      <a href="learn-more.html"><button id="button1">Tell Me More</button></a>
+    </div>
+    <!--Inserting a block for the quote, probably do a height of 200px, width of 100% so it covers the entire page and a green background--->
+    <div id="quote-block">
+      <h3>"Cady's Falls Makes Cady Hill Look Like Trash! ~ Some MTB Bro</h3>
+    </div>
+  </section>
+  <section id="main">
+    <!--Using a flex box here to set up columns to separate the two columns-->
+    <div id="column-container">
+      <div id="col1">
+        <!--created an h4 padding id tag to get the proper distance between the quote section/images and the headers-->
+        <h4 id="h4-padding">Don't Ride After A <b>Heavy Rain</b>.....
+          <br> It Ruins The Trails.
+          <!--the <br> worked really well to break up the lines without having to do two separate header tags-->
+        </h4>
+        <div>
+          <img class="pic-2" src="CFN pics/tooWet.jpg">
+        </div>
+        <h6>Totally...</h6>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est ab repellendus voluptatum odit ad labore
+          quam sed debitis, maxime at dolores quod, impedit ea harum porro asperiores incidunt consequuntur maiores unde
+          sunt! Recusandae, nulla quidem? Consequuntur optio sunt assumenda quo nobis veritatis tempora cumque odio,
+          quae
+          facere debitis adipisci minima non asperiores similique ad placeat molestiae, incidunt consectetur dolores.
+          Consequatur temporibus nulla eaque, accusantium consectetur qui aspernatur odit commodi at magni. Doloremque
+          cupiditate accusamus minima impedit architecto, cum maxime ut consequuntur, similique iste et! Libero,
+          necessitatibus! Expedita consequatur optio quas itaque, consectetur iste vel, quibusdam, aut ducimus dolorum
+          blanditiis id necessitatibus quasi eligendi aliquam magnam dignissimos saepe modi dolore! Reprehenderit
+          laboriosam a praesentium sint autem! Fuga distinctio at minima ipsa odit, sed iusto repellendus rerum
+          corporis?
+        </p>
+        <!--wrapped the buttons to get proper spacing between buttons paragraphs and the line borders-->
+        <div class="button-wrap">
+          <a href="continue-reading.html"><button class="cr-button">Continue Reading</button></a>
+        </div>
+        <hr id="border-main">
+        </hr>
+        <hr id="border-main">
+        </hr>
+        <h4 id="h4-padding">Ride Em' Dry</h4>
+        <img class="pic-2" style="padding-bottom: 30px;" src="CFN pics/Open.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime unde possimus. Ex aliquam facere
+          ipsam nihil inventore officiis mollitia dolores est rerum, repellendus quo fugiat pariatur deleniti recusandae
+          non officia expedita reprehenderit. Perferendis necessitatibus, veniam ducimus quos deleniti id magnam sit
+          consectetur neque voluptatum, nesciunt reiciendis corporis facere atque doloremque aspernatur veritatis
+          suscipit non eos nisi quaerat. Labore, quasi repudiandae molestias cum omnis, rerum, libero voluptatibus
+          dolore temporibus quibusdam voluptate! Omnis illo alias doloribus eum voluptas quam aperiam autem cum, eos
+          laborum, delectus natus eaque tempora, a ratione officia quos? Tempore, enim veniam blanditiis labore ducimus
+          quo aliquid assumenda magni asperiores eius quam doloremque consequatur fugit modi reprehenderit non soluta
+          totam! Quisquam placeat at maiores minus, voluptatibus rem ullam ipsa distinctio explicabo natus aperiam nulla
+          cum earum vero quae perferendis quasi molestias tempore alias velit quidem iste laboriosam eos? Delectus,
+          quas! Nemo quaerat atque cum, voluptatem soluta aliquam minima.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ipsa perferendis magnam repellat dolorem
+          alias. Doloribus omnis maiores et expedita corporis quod totam non? Ipsa commodi id quas. Nesciunt, culpa. Cum
+          magni ducimus asperiores itaque laborum. Accusamus architecto minima ea nihil amet voluptas, voluptatum
+          doloremque! Dolor possimus repellendus non. Ullam necessitatibus numquam maxime minima laborum at accusantium,
+          neque repellat ea cum voluptatibus hic ab facilis doloremque nulla excepturi eius harum vitae velit ducimus!
+          Quo distinctio voluptas ipsa voluptates quas, ducimus deserunt at corrupti. Quaerat tempore nemo in molestiae,
+          aliquam placeat perspiciatis pariatur porro voluptate asperiores sed voluptatum iste, repellat aperiam, magnam
+          deleniti debitis distinctio veniam quo consectetur earum vero libero. Laborum hic fugiat sunt consequatur
+          recusandae? Doloremque optio inventore cumque rerum! Sunt itaque reprehenderit, et hic voluptatibus
+          perspiciatis voluptate, quia totam commodi illo, praesentium aperiam est. Ad nam soluta nisi voluptatem
+          exercitationem dignissimos numquam possimus iure quae iusto animi officiis id quam consequuntur fugiat,
+          tempore praesentium quisquam repudiandae a consequatur, vel nihil! Debitis hic officiis vel ducimus in quae
+          tempore placeat, eos corrupti, soluta incidunt? Earum consequatur harum distinctio labore sed tempore aut,
+          sint adipisci aliquid enim reiciendis autem animi ullam suscipit eos modi molestiae non debitis illum iusto
+          iure cumque! Obcaecati quos placeat fugit, veniam sit quis quod ipsa assumenda tempore, minus est tempora vel
+          adipisci ipsam nesciunt officia sapiente, nobis omnis quidem. Quos reprehenderit obcaecati, dolorum in quas
+          molestias modi tempore delectus dolorem aperiam eaque vero eum nostrum tenetur culpa corporis omnis quod quam
+          quasi dolore soluta. Vero.</p>
+        <div class="button-wrap">
+          <a href="continue-reading.html"><button class="cr-button">Continue Reading</button></a>
+        </div>
+      </div>
+      <div id=col2>
+        <!--made a new button wrap ID for the date buttons to space them out to match the original-->
+        <div id="date-button-wrap">
+          <a href="blog-post.html"><button id="date-button">July 12</button></a>
+        </div>
+        <a href="blog-post.html">
+          <h6 class="blog-link">Just Another Post.</h6>
+        </a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+          accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+          consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+          quod quasi labore! Inventore, doloremque?</p>
+        <hr>
+        <div id="date-button-wrap">
+          <a href="blog-post.html"><button id="date-button">July 10</button></a>
+        </div>
+        <a href="blog-post.html">
+          <h6 class="blog-link">And Another Post.</h6>
+        </a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+          accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+          consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+          quod quasi labore! Inventore, doloremque?</p>
+        <hr>
+        <div id="date-button-wrap">
+          <a href="blog-post.html"><button id="date-button">July 6</button></a>
+        </div>
+        <a href="blog-post.html">
+          <h6 class="blog-link">One More Post.</h6>
+        </a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+          accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+          consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+          quod quasi labore! Inventore, doloremque?</p>
+        <hr>
+        <hr>
+        <!--Use inline style for this header because it seemed easier to repilcate the formate of the original-->
+        <h6 style="padding-top: 20px;">Something Of Note</h6>
+        <!--Inserted an image that will use float to wrap the paragraph around the image-->
+        <img class="img-3" src="CFN pics/tree.jpg" />
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consectetur nemo esse. Quasi quaerat
+          explicabo harum. Rem, earum amet. Minus, accusantium nisi. Eos veniam veritatis ex natus praesentium, sed
+          ullam nostrum voluptatem perspiciatis, quasi deleniti beatae exercitationem, cupiditate dolorem nobis. Harum
+          ipsam odio dolore!</p>
+        <div class="lm-but-wrap">
+          <a href="learn-more.html"><button>Learn More</button></a>
+        </div>
+        <hr>
+        <h6 style="padding-top: 20px;">Something Else Of Note</h6>
+        <img class="img-3" src="CFN pics/field.jpg" />
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consectetur nemo esse. Quasi quaerat
+          explicabo harum. Rem, earum amet. Minus, accusantium nisi. Eos veniam veritatis ex natus praesentium, sed
+          ullam nostrum voluptatem perspiciatis, quasi deleniti beatae exercitationem, cupiditate dolorem nobis. Harum
+          ipsam odio dolore!</p>
+        <div class="lm-but-wrap">
+          <a href="learn-more.html"><button>Learn More</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <h2>Criticism Or Insults? Let Us Know</h2>
+
+    <div id="footer-content-wrapper">
+      <div id="feedback-wrapper">
+        <input type="text" placeholder="Name" class="clear">
+        <input type="text" placeholder="Email" class="clear"> <br>
+        <!--inserted a line break to put the messages box below the name and email box-->
+        <div id="message-box-wrapper">
+          <textarea id="message-box" placeholder="Message" class="clear"></textarea>
+        </div>
+        <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send
+          Message</button>
+      </div>
+      <div id="icons">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi laborum suscipit ducimus sunt
+          adipisci nemo molestiae ut consectetur fuga earum, explicabo dolore delectus architecto, recusandae tempora
+          cum
+          fugit iste at rerum temporibus in, sapiente dolorum ex? Molestiae ea facilis hic eum laudantium, ipsa harum.
+        </p>
+        <div id="icon-wrap">
+          <div id="icon-left">
+            <div>
+              <img id="social-icons" src="CFN pics/home.svg">
+              <img id="social-icons" src="CFN pics/phone.svg">
+              <img id="social-icons" src="CFN pics/email.svg">
+            </div>
+            <div>
+              <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
+              <p id="phone">802-555-7363</p>
+              <p>MTB@gmail.com</p>
+            </div>
+          </div>
+          <div id="icon-right">
+            <div>
+              <img id="social-icons" src="CFN pics/twitter.svg">
+              <img id="social-icons" src="CFN pics/insta.svg">
+              <img id="social-icons" src="CFN pics/dribble.svg">
+              <img id="social-icons" src="CFN pics/facebook.svg">
+            </div>
+            <div>
+              <p>@CFNMTB</p>
+              <p>instagram.com</p>
+              <p>dribble.com</p>
+              <p>facebook.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>
