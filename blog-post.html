@@ -1,12 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Blog Post</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  </head>
-  <body>
-    <section id="header"></section>
-    <section id="main"></section>
-  </body>
+<link href="blogcss.css" rel="stylesheet" />
+
+<head>
+  <title>Blog Post</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#submit-button').click(function() {
+        $('.clear').val('');
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio autoplay> <source src="CFN pics/coldsummer.mp3" type="audio/mpeg"></audio>
+  <section id="header">
+    <a href="index.html"><h1>Man Down</h1></a>
+    <p>A Blog Post For The Classic Trail</p>
+    <div id="biker-container">
+      <img id="biker" src="CFN pics/bike.png">
+    </div>
+    <hr id="border-top">
+    <hr id="border-top">
+  </section>
+  <section id="main">
+    <h2>Here's Some Bro Sending Man</h2>
+
+    <p style="text-align: center;"><iframe width="800" height="315"
+        src="https://www.youtube-nocookie.com/embed/ZiM1bqijLDE?start=21" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe></p>
+
+    <!--Inserting a div to center the paragraphs-->
+    <div id="para-margins">
+      <h6>Sending Man Down Is Fun</h6>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam ex minus nobis id eos, eligendi dolore.
+        Nesciunt sed, adipisci incidunt doloribus quo delectus nihil expedita fugiat iste tenetur officiis reprehenderit
+        deserunt accusantium voluptatibus enim voluptatum illo sint labore soluta! Iusto rem ipsum nihil esse nemo?
+        Facere omnis illo, laboriosam soluta voluptas inventore, repellat tempora error dolor ducimus magnam distinctio
+        vitae hic labore. Velit eum corrupti soluta saepe voluptate quibusdam et vero consequuntur porro odit. Error
+        voluptates nihil alias repellendus iure ipsum neque quod soluta voluptas ea libero, sequi, commodi eligendi?
+        Eligendi architecto rerum, quia aliquid consequuntur itaque. Doloribus beatae facere, alias repellat dicta
+        nostrum pariatur saepe aliquid consequatur quis minus quisquam quidem quae temporibus? Porro hic eligendi non
+        incidunt provident ipsum quidem distinctio consequuntur. Cum laboriosam laudantium maiores quibusdam natus
+        accusamus. Obcaecati ratione corrupti minus, repellat doloribus recusandae eaque pariatur iste voluptas nisi rem
+        quo labore accusantium nulla quasi provident velit aliquam, dolor numquam ducimus ipsa voluptatem veniam? Nemo
+        voluptate reiciendis molestiae deleniti ea beatae ad necessitatibus consequatur laboriosam, quaerat numquam esse
+        quod porro quae cum molestias temporibus assumenda ex, aperiam vero nobis iste totam suscipit. Debitis veritatis
+        doloribus hic, neque quaerat reprehenderit nulla nihil recusandae nam. Cum necessitatibus quasi rem culpa totam
+        atque quis earum, dolores numquam deserunt neque repudiandae ad excepturi, inventore ducimus quam impedit animi
+        suscipit repellendus? Voluptate veritatis aspernatur nobis commodi cumque est ex consectetur eaque! Inventore
+        expedita modi suscipit dolorem ullam voluptate quas assumenda. Dicta maiores nulla ipsum earum, assumenda veniam
+        sapiente. Vero, magnam?</p>
+      <h6>Another Couple Paragraphs In Latin</h6>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae porro delectus necessitatibus labore
+        maiores provident at sunt nisi tempora vitae itaque voluptates incidunt, qui, quod maxime ullam in dolor magnam
+        quidem laborum nemo rerum atque inventore illum? Cumque quam soluta magnam molestiae mollitia officia illum
+        delectus neque nulla autem consequuntur labore nam aut dignissimos voluptatum, amet facilis expedita esse,
+        necessitatibus rem, maiores iure? Enim, at.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi odit praesentium quos soluta totam
+        architecto magni temporibus optio, ipsa possimus eos fuga porro dicta in et atque, sequi officiis nam delectus
+        quasi commodi, saepe eveniet laborum maiores? Omnis est inventore, libero dicta impedit harum ipsum ex beatae,
+        tempore voluptatum minus. Aliquam magnam labore nostrum eligendi dolore autem similique fugit ad vel sit eius
+        facere sequi possimus maxime impedit, ipsam non molestiae veniam ducimus voluptatem mollitia iure. Magni,
+        repudiandae nesciunt cum sint minus incidunt mollitia fugit quo sunt ex, ea labore ullam consequatur ut! Vero
+        totam sit nostrum vitae provident, tempore omnis, aut expedita in, quidem nihil temporibus commodi
+        exercitationem cumque nesciunt nisi magni ullam sapiente veniam doloremque quae assumenda unde. Nisi totam in
+        consectetur sunt!</p>
+  </section>
+  <section id="footer">
+    <h2>Criticism Or Insults? Let Us Know</h2>
+
+    <div id="footer-content-wrapper">
+      <div id="feedback-wrapper">
+        <input type="text" placeholder="Name" class="clear">
+        <input type="text" placeholder="Email" class="clear"> <br>
+        <!--inserted a line break to put the messages box below the name and email box-->
+        <div id="message-box-wrapper">
+          <textarea id="message-box" placeholder="Message" class="clear"></textarea>
+        </div>
+        <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send Message</button>
+      </div>
+      <div id="icons">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi laborum suscipit ducimus sunt
+          adipisci nemo molestiae ut consectetur fuga earum, explicabo dolore delectus architecto, recusandae tempora
+          cum
+          fugit iste at rerum temporibus in, sapiente dolorum ex? Molestiae ea facilis hic eum laudantium, ipsa harum.
+        </p>
+        <div id="icon-wrap">
+          <div id="icon-left">
+          <div>
+          <img id="social-icons" src="CFN pics/home.svg">
+          <img id="social-icons" src="CFN pics/phone.svg">
+          <img id="social-icons" src="CFN pics/email.svg">
+          </div>
+          <div>
+          <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
+          <p id="phone">802-555-7363</p>
+          <p>MTB@gmail.com</p>
+        </div>
+      </div>
+        <div id="icon-right">
+          <div>
+          <img id="social-icons" src="CFN pics/twitter.svg">
+          <img id="social-icons" src="CFN pics/insta.svg">
+          <img id="social-icons" src="CFN pics/dribble.svg">
+          <img id="social-icons" src="CFN pics/facebook.svg">
+        </div>
+        <div>
+          <p>@CFNMTB</p>
+          <p>instagram.com</p>
+          <p>dribble.com</p>
+          <p>facebook.com</p>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

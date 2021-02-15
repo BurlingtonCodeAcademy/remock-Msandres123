@@ -1,13 +1,156 @@
 <!DOCTYPE HTML>
 <html>
+  
+  <link href="learncss.css" rel="stylesheet">
   <head>
     <title>Learn More</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#submit-button').click(function() {
+          $('.clear').val('');
+        });
+      });
+    </script>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section id="header"></section>
-    <section id="main"></section>
-    <section id="footer"></section>
-  </body>
+    <audio autoplay loop><source src="CFN pics/coldsummer.mp3" type="audio/mpeg"></audio>
+    <section id="header">
+      <a href="index.html"><h1>CFN Blog</h1></a>
+      <p>A Place To Brag About Your MTB Skills</p>
+      <div id="biker-container">
+        <img id="biker" src="CFN pics/bike.png">
+      </div>
+      <hr id="border-top">
+      <hr id="border-top">
+    </section>
+    <section id="main">
+    <div id="column-container">
+    <div id="col-left">
+      <div id="date-button-wrap">
+        <a href="blog-post.html"><button id="date-button">July 12</button></a>
+      </div>
+      <a href="blog-post.html"><h6 class="blog-link">Just Another Sick Post.</h6></a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+        accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+        consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+        quod quasi labore! Inventore, doloremque?</p>
+      <hr>
+      <div id="date-button-wrap">
+        <a href="blog-post.html"><button id="date-button">July 10</button></a>
+      </div>
+      <a href="blog-post.html"><h6 class="blog-link">And Another Sick Post.</h6></a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+        accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+        consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+        quod quasi labore! Inventore, doloremque?</p>
+      <hr>
+      <div id="date-button-wrap">
+      <a href="blog-post.html"><button id="date-button">July 6</button></a>
+      </div>
+      <a href="blog-post.html"><h6 class="blog-link">One More Sick Post.</h6></a>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis optio deserunt fuga totam quaerat porro? Odit
+        accusantium, quisquam culpa inventore porro deleniti repudiandae explicabo placeat quo nostrum, nam
+        consectetur quam voluptatem voluptates magni vitae provident atque consequuntur distinctio praesentium est
+        quod quasi labore! Inventore, doloremque?</p>
+      <hr>
+      <hr>
+      <!--Use inline style for this header because it seemed easier to replicate the formate of the original-->
+      <h6 style="padding-top: 20px;">Something Of Note</h6>
+      <!--Inserted an image that will use float to wrap the paragraph around the image-->
+      <img class="img-3" src="CFN pics/tree.jpg" />
+      <!--Cannot seem to make these two post look good with the text aligned justified, there are gaps, on the other page making the images a little smaller worked, but not on this page-->
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consectetur nemo esse. Quasi quaerat
+        explicabo harum. Rem, earum amet. Minus, accusantium nisi. Eos veniam veritatis ex natus praesentium, sed
+        ullam nostrum voluptatem perspiciatis, quasi deleniti beatae exercitationem, cupiditate dolorem nobis. Harum
+        ipsam odio dolore!</p>
+      <div class="lm-but-wrap">
+        <a href="learn-more.html"><button>Learn More</button></a> 
+      </div>
+      <hr>
+      <h6 style="padding-top: 20px;">Something Else Of Note</h6>
+      <img class="img-3" src="CFN pics/field.jpg" />
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consectetur nemo esse. Quasi quaerat
+        explicabo harum. Rem, earum amet. Minus, accusantium nisi. Eos veniam veritatis ex natus praesentium, sed
+        ullam nostrum voluptatem perspiciatis, quasi deleniti beatae exercitationem, cupiditate dolorem nobis. Harum
+        ipsam odio dolore!</p>
+      <div class="lm-but-wrap">
+        <a href="learn-more.html"><button>Learn More</button></a>
+    </div>
+  </div>
+    <div id="col-right">
+    <h4>Check Out These Sick MTB Blog Posts</h4>
+    <img id="trail-pic" src="CFN pics/trail pic.jpg">
+    <h6>This Post Is Sick, Brah</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vitae voluptatibus rem atque ipsam assumenda id minus dolorem, asperiores sed obcaecati, laboriosam saepe iusto recusandae tempora natus nam praesentium. Id porro provident praesentium beatae nihil odio sunt consequatur error numquam quasi aut soluta, quisquam dolore illo voluptatum eum tempora veritatis neque necessitatibus asperiores quidem. Perspiciatis dolorum consectetur quas fuga exercitationem facere aliquam magnam consequuntur consequatur laborum veniam aperiam et cumque natus voluptas saepe illum, ducimus mollitia, quis doloribus non magni tenetur deleniti tempore. Numquam, beatae. Iste, enim reiciendis! Vel nesciunt commodi quidem sint odio non excepturi, nihil facere dicta eius iste reiciendis dolore inventore recusandae saepe deleniti laudantium voluptatum corporis, minus quia suscipit amet? Sequi sunt temporibus ea ut at?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ab facilis accusamus saepe perferendis delectus, cumque provident doloremque tempora voluptatum voluptate inventore fugit magnam nobis accusantium minus earum necessitatibus molestias libero odit beatae a maiores rerum. Odit quae quaerat fuga incidunt doloremque consectetur, tenetur quidem vitae natus a necessitatibus! Beatae expedita odit exercitationem distinctio, dolores molestias, numquam deleniti odio, amet itaque nobis quo quod consectetur. Ad rem aut reiciendis itaque quia saepe veritatis praesentium reprehenderit, culpa, exercitationem iste voluptatibus deleniti, cupiditate maiores nulla ex corporis. Nam architecto odit necessitatibus? Facilis nisi suscipit fugit quibusdam, laboriosam molestiae numquam vel saepe hic.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quo esse maiores inventore fugit porro fuga nostrum magni suscipit voluptas facilis repellat aperiam consequuntur voluptate nobis laborum libero quas culpa sint quidem beatae in optio! Quasi quas excepturi id, sunt totam neque autem ullam quaerat, voluptatem repellendus a qui aspernatur numquam porro consectetur obcaecati natus. Tenetur rerum maxime aperiam, similique animi ducimus blanditiis, quaerat omnis iure nesciunt quidem neque! Quibusdam est, nulla, harum minus distinctio dignissimos ad laboriosam magnam voluptate ipsum voluptates veritatis laborum voluptas qui tempore quos! Vel, nesciunt veniam, perspiciatis doloremque iste sint magni dignissimos expedita eaque hic, placeat eligendi! Commodi quia est quas officiis corporis, tempore nostrum quibusdam a et, minima delectus necessitatibus eos labore dolores. Corporis accusamus et laudantium quo laboriosam praesentium voluptas sed, ipsam nam cumque, debitis suscipit temporibus rem nisi cum quaerat doloremque eligendi vitae maxime optio quas nemo provident vel. Eveniet, harum dolorem.</p>  
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugit hic molestiae vel distinctio ab nostrum est error non nobis temporibus quam harum repellat alias eligendi laudantium culpa laboriosam soluta excepturi eos, voluptates aliquam dolorum iusto. Ea voluptate, cupiditate praesentium animi possimus non, molestias officiis quasi eveniet qui corrupti consequuntur voluptates eligendi quaerat soluta veniam consectetur, id quisquam repellendus debitis labore magnam cumque ratione amet? Itaque dolor hic quod nesciunt consequatur, quos rerum nulla pariatur sapiente odit, accusamus eligendi distinctio non dolorum voluptates ratione eveniet molestiae temporibus unde blanditiis expedita assumenda! Sed enim tenetur magni modi nostrum, natus delectus atque quis illo non, voluptatibus, labore quaerat aspernatur! Dignissimos libero magnam hic, corrupti tempore rem cupiditate expedita omnis aut repudiandae vero et doloribus vel ducimus illum culpa necessitatibus cum porro! Architecto, rerum. Tenetur totam cupiditate voluptates atque deleniti fugiat dicta alias autem facere amet laudantium qui dolore, molestiae ad aperiam voluptatum officia modi, eligendi doloribus tempore soluta. Reiciendis officiis iure corporis ut iste inventore in vitae sed ipsam nulla esse repellat voluptatum officia ducimus necessitatibus facilis atque consectetur illum labore dolor, doloremque velit accusamus! Quas similique, odio fuga ea ipsam perspiciatis? Quo nemo, provident facere perferendis quidem deserunt minus vitae ipsum?</p>
+    <h6>Some Paragraphs Of Latin Gibberish</h6>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas, fugit sequi reiciendis error inventore iure placeat sapiente deserunt! Corrupti, enim porro a reprehenderit voluptatem quasi voluptate explicabo iste at sed sint facere aliquid molestiae amet unde, iusto saepe nemo necessitatibus eaque. Atque id dicta tempora eligendi ducimus qui velit, quidem beatae quisquam rem ratione odio harum animi laudantium fuga excepturi non dolorum aliquid, molestias deserunt, expedita neque debitis. Voluptate, maxime? Distinctio ipsa cum quas.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptate neque quasi dignissimos deleniti temporibus quaerat amet dolore modi voluptatum omnis nihil eius distinctio obcaecati, accusantium sit ducimus? Modi itaque at vel perspiciatis optio libero? Culpa architecto doloremque et nihil facilis sequi quaerat ad corrupti distinctio nisi. Voluptates in quia tempore aperiam, assumenda nesciunt et dolorem porro id eligendi culpa! Nobis iste cupiditate tenetur explicabo a sint non vero. Magnam quidem fuga rerum quos repellat quisquam saepe nihil, quod ea adipisci vitae sapiente minus expedita porro doloremque quaerat molestias nostrum sunt vero delectus beatae earum error sed incidunt. Corrupti, minus? Saepe ut, nulla repellat perspiciatis aliquid quo assumenda sed, cumque eaque sint rem commodi a dolores porro eos. Vero, quasi nihil dignissimos necessitatibus placeat veniam at velit laboriosam ab sint, nobis laudantium reprehenderit corporis maiores ad, delectus praesentium voluptatem eos consequuntur provident sapiente? Mollitia facere id natus ipsa deserunt vero numquam in praesentium perferendis provident, adipisci unde, nemo sint hic? Ipsam fugit obcaecati illum similique sint nihil consequuntur dolorem tempora. Magni, tempore. Non ea, itaque nam corrupti maiores ipsam accusantium omnis qui, minus expedita provident. Totam voluptas laudantium nisi optio dignissimos ipsa quidem aliquam eius? Neque eos aut quia incidunt?</p>
+    <h6>Or Maybe It's Not Gibberish, IDK</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos amet labore beatae voluptates similique tempora mollitia autem, eaque maiores. Laborum totam, quis sed voluptas mollitia doloribus quaerat illo veritatis velit cum illum quam labore error ipsum exercitationem temporibus nesciunt voluptatum ducimus eos atque natus nemo. Dignissimos aliquid, veritatis in rem obcaecati ad at natus excepturi. Quae architecto, alias, eaque iure reiciendis id consequuntur aliquid atque repudiandae commodi quaerat. Nobis, sed maiores? Obcaecati incidunt iure tempore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iste rerum quasi quod itaque atque sapiente nisi nemo quam nihil quas qui aliquam aspernatur facilis odit et, earum est repudiandae blanditiis quae possimus? Tenetur sequi quod nesciunt incidunt rem quibusdam iusto magni. Hic voluptatibus facilis assumenda enim, dolorem quidem quam nemo asperiores repellendus eum quaerat laboriosam ullam exercitationem dolor, excepturi debitis possimus cupiditate harum? Alias optio, recusandae fuga maiores voluptate vel maxime nihil, possimus sequi quis excepturi eaque illum aperiam, eum vero in delectus rerum. Aperiam quo maxime asperiores, eaque recusandae unde molestias eligendi vel, alias nihil similique consequatur deleniti a nam incidunt consectetur aspernatur? Quaerat magnam cum a? Accusantium natus, officia corporis, non dolorum id repudiandae culpa consequuntur recusandae eveniet sed qui aperiam inventore adipisci numquam porro obcaecati neque hic! Excepturi vero sequi quia deleniti facilis soluta, quisquam sapiente vitae repellendus dolorem autem nostrum cumque, voluptatem architecto atque, pariatur ullam. Molestias, ea eveniet! Ducimus, corrupti quisquam et illo at sed quis alias incidunt enim, vel atque laboriosam est. Officiis voluptatem fuga autem dolorem, maxime accusantium eaque tenetur ipsam, iusto eligendi deleniti, sed vero impedit saepe. Debitis totam saepe architecto neque libero! Pariatur, a excepturi dolor harum expedita facilis nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perferendis iste nihil illo. Iure saepe aspernatur alias beatae quo natus similique dignissimos recusandae, iusto impedit repellat rerum perspiciatis amet nostrum placeat necessitatibus temporibus corrupti modi tenetur accusantium et, eveniet nihil vero! Ullam omnis dolore ratione fugit neque rerum deserunt odit cum ipsum, similique cupiditate quam deleniti labore veniam veritatis voluptates nobis, laborum beatae voluptas sed harum ex aliquam? Illo fugiat vitae vero iusto aliquam quibusdam dignissimos perspiciatis tenetur, distinctio voluptatem!</p>
+
+  </div>
+</div>
+</section>
+<section id="footer">
+  <h2>Criticism Or Insults? Let Us Know</h2>
+
+  <div id="footer-content-wrapper">
+    <div id="feedback-wrapper">
+      <input type="text" placeholder="Name" class="clear">
+      <input type="text" placeholder="Email" class="clear"> <br>
+      <!--inserted a line break to put the messages box below the name and email box-->
+      <div id="message-box-wrapper">
+        <textarea id="message-box" placeholder="Message" class="clear"></textarea>
+      </div>
+      <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send Message</button>
+    </div>
+    <div id="icons">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi laborum suscipit ducimus sunt
+        adipisci nemo molestiae ut consectetur fuga earum, explicabo dolore delectus architecto, recusandae tempora
+        cum
+        fugit iste at rerum temporibus in, sapiente dolorum ex? Molestiae ea facilis hic eum laudantium, ipsa harum.
+      </p>
+      <div id="icon-wrap">
+        <div id="icon-left">
+        <div>
+        <img id="social-icons" src="CFN pics/home.svg">
+        <img id="social-icons" src="CFN pics/phone.svg">
+        <img id="social-icons" src="CFN pics/email.svg">
+        </div>
+        <div>
+        <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
+        <p id="phone">802-555-7363</p>
+        <p>MTB@gmail.com</p>
+      </div>
+    </div>
+      <div id="icon-right">
+        <div>
+        <img id="social-icons" src="CFN pics/twitter.svg">
+        <img id="social-icons" src="CFN pics/insta.svg">
+        <img id="social-icons" src="CFN pics/dribble.svg">
+        <img id="social-icons" src="CFN pics/facebook.svg">
+      </div>
+      <div>
+        <p>@CFNMTB</p>
+        <p>instagram.com</p>
+        <p>dribble.com</p>
+        <p>facebook.com</p>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
 </html>

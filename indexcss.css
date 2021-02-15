@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: "Reggae One";
+}
+
+body button {
+  background-color: rgb(32, 68, 32);
+  color: rgb(235, 166, 37);
+  border-radius: 5px;
+}
+
+body button:hover {
+  background-color: rgb(87, 155, 87);
+}
+/* ----Works to remove the underline from links and is less work than targeting certain anchors-----  */
+body a {
+  text-decoration: none;
+}
+
+body p {
+  text-align: justify;
+}
+
+#header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  color: black;
+}
+
+#header h1:hover {
+  color: rgb(32, 68, 32);
+}
+
+#header p {
+  font-size: 12px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#features h4 {
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+
+#biker-container {
+  position: relative;
+  text-align: left;
+  width: 90vw;
+  height: 30px;
+}
+
+#biker {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  padding-left: 160px;
+  animation: run 5s linear;
+}
+/* had to mess with these pixel numbers a bit to get it how I wanted, but I'm satisfied with how it turned out*/
+@keyframes run {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 36vw;
+  }
+  100% {
+    left: 72vw;
+  }
+}
+
+#border-top {
+  border: 1px solid grey;
+  width: 76%;
+  align-items: center;
+}
+
+#features {
+  text-align: center;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  align-content: center;
+}
+
+.pic {
+  height: 250px;
+  width: 250px;
+  float: inline-end;
+}
+
+#captions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#learn-more-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#button1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#quote-block {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(32, 68, 32);
+}
+
+#quote-block h3 {
+  padding-top: 150px;
+}
+
+#column-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+/*used 75% for the first column and 25% for the second column to match the original as best I can*/
+#col1 {
+  width: 75%;
+}
+
+#col2 {
+  padding-top: 35px;
+  padding-left: 25px;
+  width: 25%;
+}
+
+#col2 .blog-link {
+  color: black;
+}
+
+#col2 .blog-link:hover {
+  color: rgb(32, 68, 32);
+}
+
+#main p {
+  font-size: 10px;
+}
+
+#h4-padding {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.pic-2 {
+  height: 250px;
+  width: 625px;
+}
+
+.button-wrap {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.cr-button {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+#date-button-wrap {
+  padding-top: 25px;
+}
+
+#col2 p {
+  padding-bottom: 15px;
+}
+
+.img-3 {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+}
+
+.lm-but-wrap {
+  padding-bottom: 20px;
+}
+
+#footer {
+  background-color: silver;
+  height: 400px;
+}
+
+#footer h2 {
+  padding-top: 75px;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 10px;
+}
+
+#footer-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+#message-box-wrapper {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#message-box {
+  text-align: left;
+  padding: 0.4em;
+  height: 75px;
+  width: 300px;
+}
+
+input:hover {
+  background-color: cornsilk;
+}
+
+textarea:hover {
+  background-color: cornsilk;
+}
+
+#submit-button {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+/* Was having some problems with the end of the page, setting the height of this ID to 40px fixed that */
+#icon-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+#icon-left {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+#icon-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#icon-right p {
+  padding-bottom: 17px;
+}
+
+#social-icons {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  padding: 0.5em;
+}
+
+#icon-left #social-icons {
+  padding-bottom: 20px;
+}
+
+/* --------Used padding to make the email address align with the Icon, probably a better way but this works---------- */
+#phone {
+  padding-bottom: 25px;
+}
