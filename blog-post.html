@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html>
-<link href="blogcss.css" rel="stylesheet" />
+<!-- CSS Style imported -->
+<link href="/styles/blogcss.css" rel="stylesheet" />
 
 <head>
   <title>Blog Post</title>
   <meta charset="utf-8" />
+  <!-- Font Family imported from google -->
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#submit-button').click(function() {
-        $('.clear').val('');
-      });
-    });
-  </script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <audio autoplay> <source src="CFN pics/coldsummer.mp3" type="audio/mpeg"></audio>
+  <!-- Audio inserted -->
+  <audio autoplay>
+    <source src="/media/coldsummer.mp3" type="audio/mpeg">
+  </audio>
+  <!-- Header of blog post -->
   <section id="header">
-    <a href="index.html"><h1>Man Down</h1></a>
+    <a href="index.html">
+      <h1>Man Down</h1>
+    </a>
     <p>A Blog Post For The Classic Trail</p>
     <div id="biker-container">
-      <img id="biker" src="CFN pics/bike.png">
+      <img id="biker" src="media/bike.png">
     </div>
     <hr id="border-top">
     <hr id="border-top">
   </section>
+  <!-- Main section of  blog post-->
   <section id="main">
     <h2>Here's Some Bro Sending Man</h2>
-
+    <!-- Youtube video inserted via iframe -->
     <p style="text-align: center;"><iframe width="800" height="315"
         src="https://www.youtube-nocookie.com/embed/ZiM1bqijLDE?start=21" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe></p>
 
-    <!--Inserting a div to center the paragraphs-->
+    <!--Main Body Paragraphs of the blog post page-->
     <div id="para-margins">
       <h6>Sending Man Down Is Fun</h6>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ullam ex minus nobis id eos, eligendi dolore.
@@ -74,10 +75,11 @@
         exercitationem cumque nesciunt nisi magni ullam sapiente veniam doloremque quae assumenda unde. Nisi totam in
         consectetur sunt!</p>
   </section>
+  <!-- Footer Container -->
   <section id="footer">
     <h2>Criticism Or Insults? Let Us Know</h2>
-
     <div id="footer-content-wrapper">
+      <!-- Form container-->
       <div id="feedback-wrapper">
         <input type="text" placeholder="Name" class="clear">
         <input type="text" placeholder="Email" class="clear"> <br>
@@ -85,8 +87,11 @@
         <div id="message-box-wrapper">
           <textarea id="message-box" placeholder="Message" class="clear"></textarea>
         </div>
-        <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send Message</button>
+        <!-- Button alerts user when feedback has been submitted-->
+        <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send
+          Message</button>
       </div>
+      <!-- Container for icons/ contact information-->
       <div id="icons">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi laborum suscipit ducimus sunt
           adipisci nemo molestiae ut consectetur fuga earum, explicabo dolore delectus architecto, recusandae tempora
@@ -94,36 +99,51 @@
           fugit iste at rerum temporibus in, sapiente dolorum ex? Molestiae ea facilis hic eum laudantium, ipsa harum.
         </p>
         <div id="icon-wrap">
+          <!--Container for icons/info on left-->
           <div id="icon-left">
-          <div>
-          <img id="social-icons" src="CFN pics/home.svg">
-          <img id="social-icons" src="CFN pics/phone.svg">
-          <img id="social-icons" src="CFN pics/email.svg">
+            <div>
+              <!-- Icons on the left -->
+              <img id="social-icons" src="CFN pics/home.svg">
+              <img id="social-icons" src="CFN pics/phone.svg">
+              <img id="social-icons" src="CFN pics/email.svg">
+            </div>
+            <div>
+              <!-- Contact information on the left -->
+              <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
+              <p id="phone">802-555-7363</p>
+              <p>MTB@gmail.com</p>
+            </div>
           </div>
-          <div>
-          <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
-          <p id="phone">802-555-7363</p>
-          <p>MTB@gmail.com</p>
-        </div>
-      </div>
-        <div id="icon-right">
-          <div>
-          <img id="social-icons" src="CFN pics/twitter.svg">
-          <img id="social-icons" src="CFN pics/insta.svg">
-          <img id="social-icons" src="CFN pics/dribble.svg">
-          <img id="social-icons" src="CFN pics/facebook.svg">
-        </div>
-        <div>
-          <p>@CFNMTB</p>
-          <p>instagram.com</p>
-          <p>dribble.com</p>
-          <p>facebook.com</p>
-        </div>
+          <!--Container for icons/info on right-->
+          <div id="icon-right">
+            <div>
+              <!-- Icons on the right -->
+              <img id="social-icons" src="CFN pics/twitter.svg">
+              <img id="social-icons" src="CFN pics/insta.svg">
+              <img id="social-icons" src="CFN pics/dribble.svg">
+              <img id="social-icons" src="CFN pics/facebook.svg">
+            </div>
+            <div>
+              <!-- Contact info on the right -->
+              <p>@CFNMTB</p>
+              <p>instagram.com</p>
+              <p>dribble.com</p>
+              <p>facebook.com</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!--Script for clearing out input form-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#submit-button').click(function () {
+        $('.clear').val('');
+      });
+    });
+  </script>
 </body>
 
 </html>

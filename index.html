@@ -1,40 +1,35 @@
 <!DOCTYPE HTML>
 <html>
-<link href="indexcss.css" rel="stylesheet" />
+<!-- CSS Style imported -->
+<link href="/styles/indexcss.css" rel="stylesheet" />
 
 <head>
   <title>Mockup Home</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <!--Found this on YouTube, seems to work fine-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#submit-button').click(function () {
-        $('.clear').val('');
-      });
-    });
-  </script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!--Audio imported into the page-->
   <audio autoplay loop>
-    <source src="CFN pics/coldsummer.mp3" type="audio/mpeg">
+    <source src="/media/coldsummer.mp3" type="audio/mpeg">
   </audio>
+  <!-- Page Header -->
   <section id="header">
     <a href="index.html">
       <h1>Cady's Falls Trail Network</h1>
     </a>
     <p>Mo-Vegas' Finest</p>
     <div id="biker-container">
-      <img id="biker" src="CFN pics/bike.png">
+      <img id="biker" src="media/bike.png">
     </div>
     <!--used hr to create a horizontal line, may be a better way, but not sure-->
     <hr id="border-top">
     <hr id="border-top">
   </section>
+  <!--Features Section-->
   <section id="features">
     <h4>Home Of The Best MTB In Lamoille County</h4>
     <!--Created a flex box to spread out the images-->
@@ -59,6 +54,7 @@
       <h3>"Cady's Falls Makes Cady Hill Look Like Trash! ~ Some MTB Bro</h3>
     </div>
   </section>
+  <!-- Main Body Paragraphs -->
   <section id="main">
     <!--Using a flex box here to set up columns to separate the two columns-->
     <div id="column-container">
@@ -127,11 +123,12 @@
           <a href="continue-reading.html"><button class="cr-button">Continue Reading</button></a>
         </div>
       </div>
+      <!-- Container for the blog/learn more post post -->
       <div id=col2>
-        <!--made a new button wrap ID for the date buttons to space them out to match the original-->
         <div id="date-button-wrap">
           <a href="blog-post.html"><button id="date-button">July 12</button></a>
         </div>
+        <!--initial blog post-->
         <a href="blog-post.html">
           <h6 class="blog-link">Just Another Post.</h6>
         </a>
@@ -143,6 +140,7 @@
         <div id="date-button-wrap">
           <a href="blog-post.html"><button id="date-button">July 10</button></a>
         </div>
+        <!--second blog post-->
         <a href="blog-post.html">
           <h6 class="blog-link">And Another Post.</h6>
         </a>
@@ -154,6 +152,7 @@
         <div id="date-button-wrap">
           <a href="blog-post.html"><button id="date-button">July 6</button></a>
         </div>
+        <!--third blog post-->
         <a href="blog-post.html">
           <h6 class="blog-link">One More Post.</h6>
         </a>
@@ -163,6 +162,7 @@
           quod quasi labore! Inventore, doloremque?</p>
         <hr>
         <hr>
+        <!--initial learn more post-->
         <!--Use inline style for this header because it seemed easier to repilcate the formate of the original-->
         <h6 style="padding-top: 20px;">Something Of Note</h6>
         <!--Inserted an image that will use float to wrap the paragraph around the image-->
@@ -175,6 +175,7 @@
           <a href="learn-more.html"><button>Learn More</button></a>
         </div>
         <hr>
+        <!-- Second learn more post -->
         <h6 style="padding-top: 20px;">Something Else Of Note</h6>
         <img class="img-3" src="CFN pics/field.jpg" />
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque consectetur nemo esse. Quasi quaerat
@@ -187,10 +188,11 @@
       </div>
     </div>
   </section>
+  <!-- Footer Container -->
   <section id="footer">
     <h2>Criticism Or Insults? Let Us Know</h2>
-
     <div id="footer-content-wrapper">
+      <!-- Form container-->
       <div id="feedback-wrapper">
         <input type="text" placeholder="Name" class="clear">
         <input type="text" placeholder="Email" class="clear"> <br>
@@ -198,9 +200,11 @@
         <div id="message-box-wrapper">
           <textarea id="message-box" placeholder="Message" class="clear"></textarea>
         </div>
+        <!-- Button alerts user when feedback has been submitted-->
         <button id="submit-button" onclick="alert('Your Message Has Been Sent')" value="Clear Text">Send
           Message</button>
       </div>
+      <!-- Container for icons/ contact information-->
       <div id="icons">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nisi laborum suscipit ducimus sunt
           adipisci nemo molestiae ut consectetur fuga earum, explicabo dolore delectus architecto, recusandae tempora
@@ -208,26 +212,32 @@
           fugit iste at rerum temporibus in, sapiente dolorum ex? Molestiae ea facilis hic eum laudantium, ipsa harum.
         </p>
         <div id="icon-wrap">
+          <!--Container for icons/info on left-->
           <div id="icon-left">
             <div>
+              <!-- Icons on the left -->
               <img id="social-icons" src="CFN pics/home.svg">
               <img id="social-icons" src="CFN pics/phone.svg">
               <img id="social-icons" src="CFN pics/email.svg">
             </div>
             <div>
+              <!-- Contact information on the left -->
               <p>1234 Cady's Falls Rd<br>Morrisville, VT,<br>05661</p>
               <p id="phone">802-555-7363</p>
               <p>MTB@gmail.com</p>
             </div>
           </div>
+          <!--Container for icons/info on right-->
           <div id="icon-right">
             <div>
+              <!-- Icons on the right -->
               <img id="social-icons" src="CFN pics/twitter.svg">
               <img id="social-icons" src="CFN pics/insta.svg">
               <img id="social-icons" src="CFN pics/dribble.svg">
               <img id="social-icons" src="CFN pics/facebook.svg">
             </div>
             <div>
+              <!-- Contact info on the right -->
               <p>@CFNMTB</p>
               <p>instagram.com</p>
               <p>dribble.com</p>
@@ -238,6 +248,15 @@
       </div>
     </div>
   </section>
+  <!--Script for clearing out input form-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#submit-button').click(function () {
+        $('.clear').val('');
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,237 @@
+/*Sets font family and body Margin to 0*/
+body {
+  margin: 0;
+  font-family: "Reggae One";
+}
+/*Aligns text to be justified to match example template*/
+body p {
+  text-align: justify;
+}
+/*Removes text-decorations from linked text*/
+body a {
+  text-decoration: none;
+}
+/*Button styling*/
+body button {
+  background-color: rgb(32, 68, 32);
+  color: rgb(235, 166, 37);
+  border-radius: 5px;
+}
+/*Button styling while mouse hovers*/
+body button:hover {
+  background-color: rgb(87, 155, 87);
+}
+/*Styling for the headers*/
+#header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  color: black;
+}
+/*Header styling when hovered over*/
+#header h1:hover {
+  color: rgb(32, 68, 32);
+}
+/*Header paragraph styling*/
+#header p {
+  font-size: 12px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+/*Animation Container*/
+#biker-container {
+  position: relative;
+  text-align: left;
+  width: 90vw;
+  height: 30px;
+}
+/* Animation Image */
+#biker {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  padding-left: 160px;
+  animation: run 5s linear;
+}
+/*Animation KeyFrame*/
+@keyframes run {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 36vw;
+  }
+  100% {
+    left: 72vw;
+  }
+}
+/*Border Styling*/
+#border-top {
+  border: 1px solid grey;
+  width: 76%;
+  align-items: center;
+}
+/*Container for Main Body Paragraph & Blog/Learn More Post */
+#column-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+/*Style for Blog/Learn More Post*/
+#col-left {
+  padding-top: 35px;
+  padding-left: 25px;
+  width: 25%;
+}
+
+#col-left .blog-link {
+  color: black;
+}
+
+#col-left .blog-link:hover {
+  color: rgb(32, 68, 32);
+}
+
+#main p {
+  font-size: 10px;
+}
+
+#main h4 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.pic-2 {
+  height: 250px;
+  width: 650px;
+}
+
+.button-wrap {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+/* Continue Reading Button Style */
+.cr-button {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+#date-button-wrap {
+  padding-top: 25px;
+}
+
+#col-left p {
+  padding-bottom: 15px;
+}
+
+.img-3 {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+}
+
+.lm-but-wrap {
+  padding-bottom: 20px;
+}
+/* Styling for Column Containing Main Body Paragraphs */
+#col-right {
+  width: 75%;
+  padding-left: 40px;
+}
+
+#trail-pic {
+  height: 250px;
+  width: 600px;
+}
+/*Footer Styling*/
+#footer {
+  background-color: silver;
+  height: 400px;
+}
+
+#footer h2 {
+  padding-top: 75px;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 10px;
+}
+/*Form input and Text Area Styling*/
+#footer-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+input:hover {
+  background-color: cornsilk;
+}
+
+textarea:hover {
+  background-color: cornsilk;
+}
+/*Form input and Text Area Styling*/
+#message-box-wrapper {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+#message-box {
+  height: 75px;
+  width: 300px;
+}
+
+#submit-button {
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+/* Styling for Icons and Contact Info */
+#icon-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+/* Styling for Icons and Contact Info on the Left */
+#icon-left {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 3fr;
+}
+/* Styling for Icons and Contact Info on the Right */
+#icon-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#icon-right p {
+  padding-bottom: 17px;
+}
+/*General Icon Styling*/
+#social-icons {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  padding: 0.5em;
+}
+
+#icon-left #social-icons {
+  padding-bottom: 20px;
+}
+
+/* --------Used padding to make the email address align with the Icon, probably a better way but this works---------- */
+#phone {
+  padding-bottom: 25px;
+}
